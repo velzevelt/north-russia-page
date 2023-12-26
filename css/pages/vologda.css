@@ -1,0 +1,10 @@
+@import url(/north-russia-page/css/pages/article.css);
+
+
+.main {
+    background: url(/north-russia-page/assets/images/vologda.jfif);
+    background-size: cover;
+    object-fit: cover;
+
+    height: 100vh;
+}
