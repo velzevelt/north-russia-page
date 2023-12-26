@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/pages/index.css">
+
+    <title>North Russia</title>
+</head>
+
+<body>
+    
+    <!-- <script src="/js/injector.js" inject="/html/templates/header.html"></script> -->
+    <!-- <?e include("templates/header.html") ?> -->
+
+    <main>
+
+        <section class="main">
+            
+            <!-- <img src="/assets/images/main.jpg" alt="" srcset="" class="main__image unselectable"> -->
+            <?e include("templates/header.html") ?>
+
+            <h1>
+                Туристические места Севера
+            </h1>
+        </section>
+
+
+        <section class="browser">
+            <h3>
+                Популярно
+            </h3>
+
+            <?e include("templates/browser.html") ?>
+
+            <div class="browser__more" style="margin-bottom: 200px;">
+                <div class="search__column">
+                    <label class="search__label">Найти больше</label>
+                    <form action="/html/browse.html" method="get" class="search__form">
+                        <input name="s" placeholder="Поиск..." type="search" class="search__input">
+                        <button type="reset" class="search__button--reset"></button>
+                        <button type="submit" class="search__button--submit">
+                            <svg class="search__icon">
+                                <use href="/assets/images/sprite_atlas.svg#search"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
+
+        <aside class="leisure">
+            <img src="/assets/images/leisure.jpg" alt="" srcset="" class="leisure__image unselectable">
+            <div class="leisure__info">
+                <h4>Активный отдых</h4>
+                <p>Север России подходит для любителей активного отдыха, таких как горные лыжи, сноуборд, снегоходы и
+                    другие зимние виды спорта.</p>
+            </div>
+        </aside>
+
+    </main>
+
+    <!-- <script src="/js/injector.js" inject="/html/templates/footer.html"></script> -->
+
+    <?e include("templates/footer.html") ?>
+    <?e include("templates/scroll-button.html") ?>
+
+</body>
+
+
+<script src="/js/browser.js"></script>
+
+
+</html>

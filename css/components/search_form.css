@@ -1,0 +1,139 @@
+.search__column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.search__form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 41vw;
+    min-width: 250px;
+    height: 70px;
+    border-radius: 40px;
+    background: #BDCAD8;
+    transition: all 0.2s ease;
+    overflow: hidden;
+}
+
+
+/north-russia-page/* hover только если нет hover на search_button и не в фокусе */
+.search__form:hover:not(:focus-within, :has(.search__button--submit:hover)) {
+    background: #d1e1f1;
+}
+
+.search__form:focus-within {
+    background: #c1d8f0;
+}
+
+
+.search__input {
+    background: none;
+    width: 100%;
+    height: 100%;
+    border: none;
+    appearance: none;
+    outline: none;
+
+    padding-left: 5%;
+    color: #182733;
+    font-family: Roboto Condensed;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.search__input::-webkit-search-cancel-button {
+    appearance: none;
+}
+
+.search__input::-webkit-input-placeholder {
+    color: #182733;
+}
+
+.search__button--submit {
+    height: 100%;
+    width: 100px;
+    padding-right: 10px;
+    border: none;
+    outline: none !important;
+    cursor: pointer;
+    background: #618AAF;
+}
+
+.search__button--submit:hover {
+    background: #7caeda;
+    transition: background 0.2s ease-in;
+}
+
+
+.search__button--submit:not(:hover) {
+    transition: all 0.1s ease-out;
+}
+
+.search__button--reset {
+    visibility: hidden;
+}
+
+.search__input:not(:placeholder-shown) + .search__button--reset {
+    visibility: visible;
+}
+
+.search__button--reset {
+    border: none;
+    outline: none !important;
+    cursor: pointer;
+    background: transparent;
+    min-width: 30px;
+    height: 50%;
+    margin-right: 3px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search__button--reset:hover {
+    background: #7caeda;
+    transition: all 0.1s ease-in;
+}
+
+.search__button--reset:hover::after {
+    color: #fff;
+}
+
+.search__button--reset:not(:hover) {
+    transition: all 0.1s ease-out;
+}
+
+.search__button--reset::after {
+    display: inline-block;
+    content: "\00d7";
+    font-size: 300%;
+    vertical-align: middle;
+    justify-content: center;
+    color: #182733;
+}
+
+
+.search__icon {
+    width: 60%;
+    height: 60%;
+    stroke: #FFF;
+}
+
+.search__label {
+    color: #FFF;
+    font-family: Jost;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 5%;
+    margin-bottom: 10px;
+    cursor: auto;
+}

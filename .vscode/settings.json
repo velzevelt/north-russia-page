@@ -1,0 +1,8 @@
+{
+
+    "files.associations": {
+        "*.htmle": "html",
+    },
+
+    "liveServer.settings.port": 5502
+}

@@ -1,0 +1,77 @@
+.article {
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+h2 {
+    color: #FFF;
+    font-family: Jost;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h3 {
+    color: #FFF;
+    font-family: Jost;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+
+p {
+    color: #FFF;
+    /north-russia-page/* Base Text */
+    font-family: Roboto;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.image__container {
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.image__container img {
+    width: 100%;
+    height: 100%;
+}
+
+.image__container figcaption {
+    color: #FFF;
+    font-family: Roboto Condensed;
+    font-size: 2rem;
+    font-style: light;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.subimage {
+    min-width: 100%;
+    max-width: 100%;
+
+    min-height: 100%;
+    max-height: 100%;
+
+    object-fit: cover;
+}
+
+.image__container--grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    margin-bottom: 90px;
+}
+
+
+@media (max-width: 830px) {
+    .image__container--grid {
+        display: block;
+    }
+}
